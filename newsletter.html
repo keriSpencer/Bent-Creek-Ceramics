@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bent Creek Ceramics</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <wrapper>
+      <nav id="main-navigation">
+        <img id="logo" src="images/bent-creek-logo.png">
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+      <section id="ceramic-image">
+        <div id="white-background">
+          <div id="newsletter-form">
+            <h2>Sign Up for Our Weekly Newsletter</h2>
+            <h3>Stay up to date with events, activities, news and specials.</h3>
+          </div>
+          <form action="#" method="post">
+            <label>Name</label>
+            <input type="text"></input></br>
+            <label>Email</label>
+            <input type="email"></input></br>
+            <button type="button" onclick="myFunction()" name="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+  </wrapper>
+  <script type="text/javascript">
+    var nameInput = document.getElementById('nameInput');
+    var emailInput = document.getElementById('emailInput');
+    var signupButton = document.getElementById('signupButton');
+    signupButton.addEventListener('click', function(e) {
+      var nameVal = nameInput.value;
+      var emailVal = emailInput.value;
+      if (nameVal && emailVal) {
+        alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+        nameInput.value = "";
+        emailInput.value = "";
+      } else {
+        alert('We would love for you to sign up, please provide both your name and email address.');
+      }
+    });
+  </script>
+  </body>
+</html>

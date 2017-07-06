@@ -1,0 +1,439 @@
+/*
+Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #F2F1E8;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+#main-navigation {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+#logo {
+  display: flex;
+  width: 2em;
+  height: 2em;
+  margin-right: 35%;
+  margin-left: 5px;
+}
+
+#nav-list {
+  list-style-type: none;
+  display: flex;
+  padding: auto 1em auto 1em;
+  text-transform: uppercase;
+  font-family: roboto;
+  flex-wrap: wrap;
+  color: #968772;
+}
+
+#nav-list li {
+  display: flex;
+  align-content: center;
+  margin: auto 1em auto 1em;
+  justify-content: center;
+}
+
+a:link {
+  color: #2B2F26;
+}
+
+a:visited {
+  color: #968772;
+}
+
+a:hover {
+  color: #CD5D67;
+}
+
+#title h1, h3 {
+  text-align: center;
+  font-family: Merriweather;
+}
+
+#title h1 {
+  font-size: 45px;
+  font-weight: normal;
+  margin-bottom: 2.5px;
+  margin-top: 1.5em;
+  padding-top: .5em;
+}
+
+#title h3 {
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: lighter;
+  margin-bottom: 3em;
+}
+
+.photo {
+  display: flex;
+  align-content: flex-start;
+  padding-bottom: .8em;
+  color: #F2F1E8;
+}
+
+.row-one-photos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: .9em;
+}
+
+.row-two-photos {
+  display: flex;
+  justify-content: space-around;
+  margin: .75em 0 .75em 0;
+}
+
+#photo1-text {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.photo-text {
+  display: flex;
+  color: #F2F1E8;
+  padding: .6em;
+  background-color: #333;
+  align-content: center;
+  align-self: flex-end;
+}
+
+#photo1 {
+  height: 250px;
+  background-image: url("images/product-1.jpg");
+  background-size: cover;
+  width: 56%;
+}
+
+#photo2 {
+  height: 250px;
+  background-image: url("images/product-2.jpg");
+  background-size: cover;
+  width: 20%;
+  color: white;
+}
+
+#photo3 {
+  height: 250px;
+  background-image: url("images/product-3.jpg");
+  background-size: cover;
+  width: 20%;
+  color: white;
+}
+
+#photo4 {
+  height: 200px;
+  background-image: url("images/product-4.jpg");
+  background-size: cover;
+  width:20%;
+  color: white;
+}
+
+#photo5 {
+  height: 200px;
+  background-image: url("images/product-5.jpg");
+  background-size: cover;
+  width: 20%;
+  color: white;
+}
+
+#photo6 {
+  height: 200px;
+  background-image: url("images/product-6.jpg");
+  background-size: cover;
+  width: 35%;
+  color: white;
+}
+
+#photo7 {
+  height: 200px;
+  background-image: url("images/product-7.jpg");
+  background-size: cover;
+  width: 20%;
+  color: white;
+}
+
+.row-one-photos {
+  flex-wrap: wrap;
+}
+
+.row-two-photos {
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: #333;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  margin-left: 1em;
+  padding: .5em 0 .5em 0;
+  background-color: #333;
+}
+
+#about-footer {
+  color: white;
+  margin: 0;
+  margin-top: 2em;
+  padding: .5em 0 .5em 0;
+  background-color: #333;
+}
+
+/*********** Newsletter CSS ***********/
+
+#ceramic-image {
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  background-image: url(images/background-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 103%;
+  height: 35%;
+}
+
+#white-background {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: 22em;
+  margin: 4em 4em 26em 4em;
+  padding-top: 1em;
+}
+
+#newsletter-form {
+  color: black;
+}
+
+form {
+  color: #666;
+  border: none;
+  width: 33em;
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter-form h3,
+#newsletter-form h2 {
+  display: flex;
+  justify-content: center;
+  font-family: merriweather;
+  font-weight: normal;
+}
+
+#newsletter-form h2 {
+  font-size: 28px;
+}
+
+#newsletter-form h3 {
+  font-weight: normal;
+}
+
+input[type="text"] {
+  border: none;
+  /*border-bottom: 2px solid #666;*/
+}
+
+input[type="email"] {
+  border: none;
+}
+
+label {
+  border: none;
+  border-bottom: 2px solid #968772;
+  padding-top: 1em;
+  font-family: roboto;
+  font-size: 18px;
+  color: #968772;
+}
+
+button {
+  width: 9em;
+  display: flex;
+  height: 3em;
+  justify-content: center;
+  align-content: center;
+  margin: -1em;
+  display: flex;
+  margin: -5px 31%;
+  background-color: #968772;
+  color: white;
+  font-size: 18px;
+  border: none;
+}
+
+
+
+/*********** About CSS ***********/
+
+body {
+  background-color: #F2F1E8;
+}
+
+#about-top-image {
+  background-image: url(images/birdhouse.jpg);
+  width: 12%;
+  height: 37%;
+  background-size: cover;
+}
+
+section#main {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+section#main#main-top-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#main h1 {
+  font-family: merriweather;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+}
+
+#main h3 {
+  font-weight: normal;
+  color: #666;
+}
+
+table {
+  border-collapse: collapse;
+  margin-right: 10%;
+}
+
+tbody {
+  font-family: merriweather;
+  font-weight: lighter;
+}
+
+th {
+  font-weight: lighter;
+  padding: 1.25em;
+}
+
+td {
+  padding: .5em 1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+table tr th, table tr td {
+  padding-right: 7em;
+  border: 1px solid black;
+}
+
+h3.about-h3 {
+  display: flex;
+  margin-top: 2em;
+}
+
+p {
+  font-family: merriweather;
+  font-weight: normal;
+  line-height: 2.5em;
+  text-align: justify;
+}
+
+blockquote {
+  font-family: merriweather;
+  border-left: 2px solid #968772;
+  padding-left: 2em;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 2.5em;
+}
+
+#image-wrapper {
+  background-image: url(images/background-3.jpg);
+  height: 18em;
+  width: 94em;
+  background-size: cover;
+  position: absolute;
+  margin-top: 47%;
+  margin-left: -21em;
+}
+
+div#image-wrapper-text {
+  color: white;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 2em;
+  margin-left: inherit;
+}
+
+
+aside {
+  margin-top: 6em;
+}
+
+p#aside-text {
+  line-height: 2em;
+  width: 12em;
+}
+
+div#bottom-side-image {
+  background-image: url(images/background-1.jpg);
+  width: 12em;
+  height: 9em;
+  background-size: cover;
+  margin-top: 3em;
+}
+
+div#facilities-section {
+  display: flex;
+}
+
+p#facilities-text {
+  margin-right: 3em;
+  line-height: 3em;
+}
+
+div#under-image {
+  margin-top: 7em;
+}
